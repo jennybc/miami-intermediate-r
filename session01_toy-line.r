@@ -4,7 +4,7 @@ sigSq <- 0.5
 n <- 40
 
 x <- runif(n)
-avgX <- mean(x)
+(avgX <- mean(x))
 write(avgX, "avgX.txt")
 
 y <- a + b * x + rnorm(n, sd = sqrt(sigSq))
