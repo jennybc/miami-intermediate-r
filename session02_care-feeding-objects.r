@@ -114,3 +114,15 @@ month.name
 set.seed(1)
 (x <- round(rnorm(8), 2))
 names(x) <- letters[seq_along(x)]
+x[4]
+x[c(3, 5, 8)]
+x[-7]
+x < 0
+x[x < 0]
+which(x < 0)
+x[c(TRUE, FALSE)]
+x["b"]
+x[c("a", "e", "g")]
+
+(x <- cbind(month.abb, month.name))
+x[2, 2]
