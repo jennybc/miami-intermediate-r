@@ -13,7 +13,7 @@ library(ggplot2)
 
 ## If things aren't working, scrutinize the working directory.
 ## Is it what you think it is?
-getwd()
+#getwd()
 
 ## toggle the comment status of these lines as needed
 str(gCoef <- readRDS("gCoef.rds"))
@@ -26,9 +26,10 @@ hDat <-
 str(hDat)
 
 ## inspect the slopes by continent
+#pdf("asia-vs-americas.pdf")
 print(ggplot(hDat, aes(x = continent, y = slope)) + geom_point())
-dev.print(pdf, "asia-vs-americas.pdf")
-
+#dev.off()
+dev.print(pdf, "asia-vs.americas.pdf")
 
 ## test for a difference between Asia and Americas
 t.test(slope ~ continent, hDat)

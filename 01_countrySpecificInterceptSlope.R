@@ -1,5 +1,5 @@
 library(plyr) # ddply()
-gDat <- read.delim("gapminderDataFiveYear.txt")
+gDat <- read.delim("data/gapminder-data.txt")
 
 ## function that returns estimated intercept and slope from linear regression of
 ## lifeExp on year
