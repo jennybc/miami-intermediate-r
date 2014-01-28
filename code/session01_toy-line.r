@@ -1,7 +1,7 @@
 a <- 2
 b <- 4
 sigSq <- 0.5
-n <- 60
+n <- 80
 
 x <- runif(n)
 (avgX <- mean(x))
