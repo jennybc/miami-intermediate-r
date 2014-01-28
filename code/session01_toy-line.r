@@ -12,4 +12,4 @@ y <- a + b * x + rnorm(n, sd = sqrt(sigSq)/2)
 plot(x, y)
 abline(a, b, col = "green", lwd = 2)
 
-dev.print(pdf, "nifty_plot.pdf")
+dev.print(png, "nifty_plot.png")
